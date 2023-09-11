@@ -1,0 +1,18 @@
+{% extends "AppCoder/padre.html" %}
+
+{% block contenidoQueCambia %}
+<h2> CURSOS</h2>
+<br>
+{{ nombre }}
+<br>
+
+{% for camada in camadas %}
+    {% if camada == 1003 %}
+        <h2>{{camada}}</h2>
+    {% else %}        
+        <h4>{{camada}}</h4>
+    {% endif %}
+    
+{% endfor %}
+
+{% endblock %}
