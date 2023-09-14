@@ -57,7 +57,7 @@ def profesor_view(request):
                 nombre=informacion["nombre"],
                 apellido=informacion["apellido"],
                 email=informacion["email"],
-                catedra=informacion["Catedra"]
+                profesion=informacion["Catedra"]
             )
             modelo.save()
         return render(
@@ -84,7 +84,7 @@ def profesores_crud_update_view(request, profesor_email):
                 "nombre": profesor.nombre,
                 "apellido": profesor.apellido,
                 "email": profesor.email,
-                "catedra": profesor.catedra
+                "catedra": profesor.profesion
             }
         )
         return render(request, "AppCoder/profesores_formulario_edicion.html", {"form": formulario, "profesor": profesor})
@@ -95,7 +95,7 @@ def profesores_crud_update_view(request, profesor_email):
             profesor.nombre=informacion["nombre"] 
             profesor.apellido=informacion["apellido"]
             profesor.email=informacion["email"]
-            profesor.catedra=informacion["Catedra"]
+            profesor.profesion=informacion["Catedra"]
             profesor.save()
         return profesores_crud_read_view(request)
 

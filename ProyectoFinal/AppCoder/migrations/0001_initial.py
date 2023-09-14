@@ -16,7 +16,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('curso', models.CharField(max_length=100)),
-                ('camada', models.IntegerField()),
+                ('comision', models.IntegerField()),
             ],
         ),
         migrations.CreateModel(
@@ -26,7 +26,7 @@ class Migration(migrations.Migration):
                 ('nombre', models.CharField(max_length=50)),
                 ('apellido', models.CharField(max_length=50)),
                 ('email', models.EmailField(max_length=50)),
-                ('profesion', models.CharField(max_length=50)),
+                ('catedra', models.CharField(max_length=50)),
             ],
         ),
     ]

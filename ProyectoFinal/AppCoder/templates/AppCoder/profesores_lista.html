@@ -7,7 +7,7 @@
 
     <div style="margin-top: 20px;">
     {% for profesor in profesores %}
-        <h6 style="color: #333; background-color: #eaf2ff; padding: 10px; border-radius: 5px; margin-bottom: 15px;">{{profesor.nombre}} {{profesor.apellido}} ({{profesor.email}})- {{profesor.catedra}} </h6>
+            <h6 style="color: #333; background-color: #eaf2ff; padding: 10px; border-radius: 5px; margin-bottom: 15px;">{{profesor.nombre}} {{profesor.apellido}} ({{profesor.email}})- {{profesor.profesion}} </h6>
         <a href="/AppCoder/profesores-eliminar/{{profesor.email}}">Eliminar</a>
         <a href="/AppCoder/profesores-editar/{{profesor.email}}">Editar</a>
     {% endfor %}

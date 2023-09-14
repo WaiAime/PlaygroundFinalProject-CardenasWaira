@@ -10,4 +10,4 @@ class ProfesorFormulario(forms.Form):
     nombre = forms.CharField()
     apellido = forms.CharField()
     email = forms.EmailField()
-    catedra = forms.CharField()
+    Catedra = forms.CharField()
