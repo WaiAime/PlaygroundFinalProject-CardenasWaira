@@ -14,7 +14,7 @@
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
-  --bs-pink: #d63384;
+  --bs-pink: #d18fcf;
   --bs-red: #dc3545;
   --bs-orange: #fd7e14;
   --bs-yellow: #ffc107;
@@ -75,7 +75,7 @@
   --bs-border-radius-pill: 50rem;
   --bs-link-color: #0d6efd;
   --bs-link-hover-color: #0a58ca;
-  --bs-code-color: #d63384;
+  --bs-code-color: #086394;
   --bs-highlight-bg: #fff3cd;
 }
 
@@ -10844,7 +10844,7 @@ textarea.form-control-lg {
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url("../assets/img/bg-masthead.jpg") no-repeat center center;
+  background: url("../assets/img/Back.jpg") no-repeat center center;
   background-size: cover;
   padding-top: 8rem;
   padding-bottom: 8rem;
@@ -10900,7 +10900,7 @@ header.masthead h1, header.masthead .h1 {
 .call-to-action {
   position: relative;
   background-color: #343a40;
-  background: url("../assets/img/bg-masthead.jpg") no-repeat center center;
+  background: url("../assets/img/Back.jpg") no-repeat center center;
   background-size: cover;
   padding-top: 7rem;
   padding-bottom: 7rem;
