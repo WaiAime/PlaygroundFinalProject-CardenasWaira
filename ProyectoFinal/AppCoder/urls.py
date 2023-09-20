@@ -16,8 +16,15 @@ from .views import (
     CursoDetail,
     CursoDeleteView,
     CursoListView,
-    CursoUpdateView
+    CursoUpdateView,
+    # Login
+    login_view,
+    logout_view,
+    editar_usuario_view,
+    registro_view,
+    CambiarContrasenia,
 )
+from django.contrib.auth.views import LogoutView
 
 urlpatterns = [
     path("inicio/", inicio_view),
@@ -35,5 +42,16 @@ urlpatterns = [
     path("curso/<pk>", CursoDetail.as_view(), name="curso-detail"),
     path("curso/<pk>/update", CursoUpdateView.as_view(), name="curso-update"),
     path("curso/<pk>/delete", CursoDeleteView.as_view(), name="curso-delete"),
+    
+    
+    
+    ### Login / Logout
+    path("registro", registro_view, name="registro"),
+    path("login", login_view, name="login"),
+    path("logout", LogoutView.as_view(template_name="AppCoder/logout.html"), name="logout"),
+
+    # Edicion de usuario
+    path("editar-usuario", editar_usuario_view, name="editar-usuario"),
+    # path("cambiar-contrasenia", CambiarContrasenia.as_view(), name="cambiar-contrasenia")
 
 ]
