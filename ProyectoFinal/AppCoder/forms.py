@@ -24,7 +24,7 @@ class UserCreationFormulario(UserCreationForm):
 
     class Meta:
         model = UserModel
-        fields = ["password1", "password2", "username", "email"]
+        fields = ["username", "email","password1", "password2", ]
         help_texts = {k: "" for k in fields}
         
 
